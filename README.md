@@ -1,5 +1,7 @@
 # 相关论文
-## 1. 图像块描述子学习（旨在替代传统的手工描述子，在已检测特征点的情况下得描述子，除LIFT是检测与描述一起之外）
+## 1. 图像块描述子学习
+（旨在替代传统的手工描述子，在已检测特征点的情况下得描述子，除LIFT是检测与描述一起之外）
+
 [1]Simo-Serra, Edgar, et al. "Discriminative learning of deep convolutional feature point descriptors." #Proceedings of the IEEE International Conference on Computer Vision. 2015.
 
 [2] Xufeng Han, T. Leung, Y. Jia, R. Sukthankar, and A. C. Berg. Matchnet: Unifying feature and metric learning for patch-based matching. In Conference on Computer Vision and Pattern Recognition (CVPR), pages 3279–3286, 2015.
@@ -14,7 +16,9 @@
 
 [7]K. M. Yi, E. Trulls, V. Lepetit, and P. Fua. LIFT: LearnedInvariant Feature Transform. InProc. ECCV, 2016.
 
-## 2. 图像特征描述子学习（包括全局和局部描述子，主要用于图像检索等领域，直接得图像特征描述子）
+## 2. 图像特征描述子学习
+（包括全局和局部描述子，主要用于图像检索等领域，直接得图像特征描述子）
+
 [1]R. Arandjelovi ́c, P. Gronat, A. Torii, T. Pajdla, and J. Sivic.NetVLAD: CNN Architecture for Weakly Supervised PlaceRecognition. InProc. CVPR, 2016.
 
 [2]F. Radenovi ́c, G. Tolias, and O. Chum. CNN Image RetrievalLearns from BoW: Unsupervised Fine-Tuning with Hard Ex-amples. InProc. ECCV, 2016. 
@@ -25,7 +29,9 @@
 
 [5]Noh, Hyeonwoo, et al. "Large-scale image retrieval with attentive deep local features." Proceedings of the IEEE International Conference on Computer Vision. 2017.
 
-## 3. 特征描述子聚合（利用CNN实现的的BOV,Fisher Vector,VLAD或改进版本）
+## 3. 特征描述子聚合
+（利用CNN实现的的BOV,Fisher Vector,VLAD或改进版本）
+
 [1]Cimpoi M, Maji S, Vedaldi A. Deep filter banks for texture recognition and segmentation[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 3828-3836.
 
 [2]Arandjelovic R, Gronat P, Torii A, et al. NetVLAD: CNN architecture for weakly supervised place recognition[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 5297-5307.
@@ -65,7 +71,8 @@
 
 
 **个人理解**
-![text] （https://img-blog.csdn.net/2018060622472677)
+
+![text]（https://img-blog.csdn.net/2018060622472677)
 
 如文中图所示，利用resnet提取到多个特征图后，特征图的每个空间位置的值可以映射回原始图像的某一块区域，取该区域的中心为特征点的位置，而特征图对应点的值为特征描述子（因为有多个特征图，所以是多维的），attention机制的作用是区分这些特征点的重要程度，如果某个特征点的分数不够，可以选择舍去该特征点。而降维则需要多个这样的特征描述子来训练降维矩阵。
 
